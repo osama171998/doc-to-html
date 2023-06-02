@@ -6,14 +6,20 @@ const App = () =>{
   const [searchValue,getSearchValue] = useState("")
   const [jobCatalog,getJobCatalog] = useState(catalog)
   useEffect(()=>{
-    let value = catalog.filter((data)=>data.Name.includes(searchValue))
+    let value = catalog.filter((data)=>data.Name.toLowerCase().includes(searchValue.toLowerCase()))
     getJobCatalog(value)
   },[searchValue])
-  return <div className={classess.mainContainer}>
+
+  const setSearchValue = (e) =>{
+    getSearchValue(e.target.value)
+  }
+  return <div>
     <h1>
       JD Catalog
     </h1>
-    <input type='text' value= {searchValue} onChange={(e)=>getSearchValue(e.target.value)} className={classess.searchField} placeholder="Search Job"/>
+    <div className={classess.searchContainer}>
+         <input type='text' value= {searchValue} onChange={setSearchValue} className={classess.searchField} placeholder="Search Job"/>
+    </div>
     <div className={classess.catalogList}>
     {
       jobCatalog&&jobCatalog.map((data,key)=>{

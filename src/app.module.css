@@ -1,10 +1,17 @@
-.mainContainer{
-    display:flex;
+
+.searchContainer{
+    display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: auto;
-    flex-direction:column ;
+    margin: 3% 0%;
+}
+.searchField{
+    padding: 0.5% 1%;
+
+}
+div h1{
+    text-align: center;
 }
 .catalogList{
     display: flex;
@@ -13,7 +20,6 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    gap: 5px ;
     height: 100vh;
 }
 .catalogList a{
@@ -34,14 +40,12 @@
 .catalogDetail h2{
     text-align: center;
 }
-.searchField{
-    padding: 0.5% 1%;
-}
-@media screen and (max-width:800px) {
+
+/* @media screen and (max-width:800px) {
     .catalogList,.catalogDetail{
         height: 100%;
     }
     .catalogElement{
         width: 80%;
     }
-}
+} */
