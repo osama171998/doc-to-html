@@ -39,18 +39,25 @@
 }
 .catalogElement{
         color: #6348ab;
-        padding: 0% 2%;
+        padding: 1% 2% 4% 2%;
 }
 .descriptionHolder{
-    width: 80%;
+    width: 82%;
     display: flex;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    height: 90vh;
+    
 
 }
 .catalogDetail{
-    height: 100%;
-    overflow: hidden;
+    height: 90%;
+    overflow: auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    margin:4%;
+    padding: 2%;
+    border-radius: 12px;
+    background-color: #f6f6f6;
 }
 
 
@@ -65,9 +72,6 @@
         width: 100%;
         padding: 2%;
     
-    }
-    .catalogDetail{
-        overflow: scroll;
     }
     
 }
