@@ -64,7 +64,13 @@
 .catalogDetail h2{
     text-align: center;
 }
+.catalogSearchList{
+    display: none;
+}
 @media screen and (max-width:800px) {
+    .header{
+        padding: 2%;
+    }
     .listHolder{
         display: none;
     }
@@ -72,6 +78,19 @@
         width: 100%;
         padding: 2%;
     
+    }
+    .catalogSearchList{
+        display: block;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        margin:2% 0%;
+    }
+    .datalistInput{
+        width: 80%;
+        padding: 2%;
+        border-radius: 25px;
     }
     
 }

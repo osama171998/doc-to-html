@@ -35,6 +35,21 @@ const App = () => {
           })
         }
       </div>
+      <div className={classess.catalogSearchList}>
+       <input list ="catalog" className={classess.datalistInput} onChange={setSearchValue}/>
+              <datalist id="catalog">
+              {
+          jobCatalog && jobCatalog.map((data, key) => {
+            return <option key={key} >
+                {data.Name}
+              </option>
+          })
+        }
+                <option value="abc"/>
+              </datalist>
+      </div>
+ 
+
       {
         jobCatalog[jdIndex] && <div className={classess.descriptionHolder}>
           <div className={classess.catalogDetail} id={jdIndex}>
