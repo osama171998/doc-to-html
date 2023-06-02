@@ -45,7 +45,6 @@ const App = () => {
               </option>
           })
         }
-                <option value="abc"/>
               </datalist>
       </div>
  
